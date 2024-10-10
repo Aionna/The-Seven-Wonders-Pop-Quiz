@@ -60,7 +60,7 @@ const quizData = [
     },
     {
         question: "What class does Ioanna play?",
-        options: ["With her voice? A bard, of course!", "A druid-healer, milord!At your service!", "Have you seen her hair? A barbarian!", "A sorceress!Circe even asked her for an autograph..."],
+        options: ["With her voice? A bard, of course!", "A druid-healer, milord! At your service!", "Have you seen her hair? A barbarian!", "A sorceress! Circe even asked her for an autograph..."],
         correct: "A druid-healer, milord! At your service!",
         explanation: "She makes boo-boos go away!",
     },
