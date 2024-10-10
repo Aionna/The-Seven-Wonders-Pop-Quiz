@@ -83,8 +83,8 @@ let score = 0;
 let randomizedQuestions = [];
 
 const descriptions = {
-    low: "You might want to brush up on your Seven Wonders knowledge!",
-    medium: "Good job! You have a solid understanding of The Seven Wonders.",
+    low: "Oh mon dieu! 😱",
+    medium: "Eh ben, this isn't shabby at all!😎",
     high: "Oh là là! You're a true Seven Wonders connoisseur! 🏆"
 };
 
