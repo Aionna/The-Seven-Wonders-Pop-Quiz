@@ -66,7 +66,7 @@ body {
     font-size: 16px;
     border: none;
     border-radius: 25px; /* Increase border-radius for a more pill-like shape */
-    background-color: #d49f00;
+    background-color: #9f7905;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -77,7 +77,7 @@ body {
 }
 
 .option-button:hover, .option-button:focus {
-    background-color: #b38a00;
+    background-color: #9f7905;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Increased shadow on hover/focus */
