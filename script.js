@@ -85,7 +85,7 @@ let randomizedQuestions = [];
 const descriptions = {
     low: "You might want to brush up on your Seven Wonders knowledge!",
     medium: "Good job! You have a solid understanding of The Seven Wonders.",
-    high: "Fantastic! You're a true Seven Wonders expert!"
+    high: "Oh là là! You're a true Seven Wonders connoisseur! 🏆"
 };
 
 const questionElement = document.getElementById("question");
