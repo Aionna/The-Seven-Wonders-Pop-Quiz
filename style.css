@@ -270,6 +270,28 @@ body {
     padding: 10px 20px;
 }
 
+.clickable-heart {
+    cursor: pointer;
+    display: inline-block;
+    animation: pulsate 3s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+.clickable-heart:hover {
+    animation: none;
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
 /* Media queries for mobile */
 @media (max-width: 480px) {
     .title-bar h1 {
@@ -323,4 +345,5 @@ body {
         font-size: 20px;
         padding: 12px 24px;
     }
+    
 }

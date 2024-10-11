@@ -72,7 +72,7 @@ const quizData = [
     },
     {
         question: "What is Ioanna's favorite war cry?",
-        options: ["Glou Glou Glou! Like an angry turkey!", "Yodel-ay-ee-oo! Yodel-ay-hee-hoo! Drawing power from the yodlers of the Alps!", "Ya! Ya! Ya!", "Oh là là! The stylish war cry!"],
+        options: ["Glou Glou Glou! Like an angry turkey!", "Yodel-ay-ee-oo!Yodel-ay-hee-hoo! Drawing power from the yodlers of the Alps!", "Ya! Ya! Ya!", "Oh là là! The stylish war cry!"],
         correct: "Ya! Ya! Ya!",
         explanation: "The war cry of a true prozor...attackor!",
     },
@@ -84,7 +84,7 @@ let randomizedQuestions = [];
 
 const descriptions = {
     low: "Oh mon dieu! 😱",
-    medium: "Eh ben, this isn't shabby at all! 😎",
+    medium: "Eh ben, this isn't shabby at all!😎",
     high: "Oh là là! You're a true Seven Wonders connoisseur! 🏆"
 };
 
@@ -280,3 +280,13 @@ setInterval(() => {
         createCroissant();
     }
 }, 1000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loveLink = document.getElementById('love-link');
+    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX'; // Replace with your actual Google Drive link
+
+    loveLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(protonDriveLink, '_blank');
+    });
+});
