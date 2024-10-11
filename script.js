@@ -221,9 +221,29 @@ restartButton.addEventListener('click', () => {
     startScreen.style.display = 'block';
 });
 
+function restartQuiz() {
+    quizContainer.style.display = 'none';
+    resultElement.style.display = 'none';
+    startScreen.style.display = 'block';
+    restartButton.style.display = 'none'; // Hide restart button
+    startButton.style.display = 'block'; // Show start button
+}
+
+startButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', showNextQuestion);
+restartButton.addEventListener('click', restartQuiz);
+
 // Initialize the quiz
-startScreen.style.display = 'block';
-quizContainer.style.display = 'none';
+function initQuiz() {
+    startScreen.style.display = 'block';
+    quizContainer.style.display = 'none';
+    resultElement.style.display = 'none';
+    restartButton.style.display = 'none';
+    startButton.style.display = 'block';
+}
+
+// Call initQuiz when the page loads
+window.addEventListener('load', initQuiz);
 
 // Croissant animation logic
 const maxCroissants = 4;
