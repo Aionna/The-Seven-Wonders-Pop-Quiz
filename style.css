@@ -34,7 +34,7 @@ body {
 
 /* Questions, options, explanation */
 #quiz-container {
-    margin-top: 20px; /* Adjust based on your title bar height */
+    margin-top: 20px;
 }
 #question {
     font-size: 20px;
@@ -55,32 +55,57 @@ body {
     align-items: center;
     gap: 12px;
     width: 100%;
-    max-width: 400px; /* Limit the width of the options container */
+    max-width: 400px;
+}
+
+#start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#start-btn {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #9f7905;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#start-btn:hover {
+    background-color: #b28a0b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .option-button {
-    width: auto; /* Allow buttons to size based on content */
-    min-width: 200px; /* Set a minimum width */
-    max-width: 100%; /* Ensure buttons don't exceed container width */
+    width: 100%;
     padding: 12px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 25px; /* Increase border-radius for a more pill-like shape */
+    border-radius: 25px;
     background-color: #9f7905;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Increased shadow for better visibility */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .option-button:hover, .option-button:focus {
     background-color: #9f7905;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Increased shadow on hover/focus */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 .explanation {
     margin: 20px auto;
@@ -88,12 +113,12 @@ body {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 15px 20px;
-    border-radius: 25px; /* Pill-like shape similar to option buttons */
+    border-radius: 25px;
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 80%; /* Narrower width */
+    max-width: 80%;
     width: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -148,8 +173,7 @@ body {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: all 0.3s ease;transform 0.3s ease;
-}
+    transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -244,10 +268,7 @@ body {
     animation: wave 8s linear infinite;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-
 }
-
-
 
 /* Media queries for mobile */
 @media (max-width: 480px) {
@@ -257,18 +278,18 @@ body {
     }
 
     #question {
-        font-size: 20px; /* Adjusted for mobile */
+        font-size: 20px;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     #options {
-        max-width: 300px; /* Slightly narrower on mobile */
+        max-width: 300px;
     }
 
     .option-button {
-        min-width: 150px; /* Smaller minimum width on mobile */
+        min-width: 150px;
         font-size: 14px;
         padding: 10px 15px;
     }
@@ -282,20 +303,24 @@ body {
         padding: 10px 15px;
     }
     body {
-        padding-top: 120px; /* Slightly less padding on mobile */
+        padding-top: 120px;
     }
 
     .container {
         width: 95%;
-        padding-top: 20px; /* Less side padding on very small screens */
+        padding-top: 20px;
     }
 
     #question {
-        font-size: 18px; /* Slightly smaller font on mobile */
-        margin-top: 20px; /* Add some top margin */
+        font-size: 18px;
+        margin-top: 20px;
     }
     .title-bar {
-        height: 70px; /* Slightly smaller on mobile */
+        height: 70px;
     }
 
+    #start-btn {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
 }

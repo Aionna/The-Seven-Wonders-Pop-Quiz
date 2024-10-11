@@ -95,6 +95,8 @@ const nextButton = document.getElementById("next-btn");
 const restartButton = document.getElementById("restart-btn");
 const resultElement = document.getElementById("result");
 const quizContainer = document.getElementById("quiz-container");
+const startScreen = document.getElementById("start-screen");
+const startButton = document.getElementById("start-btn");
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -111,13 +113,47 @@ function startQuiz() {
     restartButton.style.display = 'none';
     quizContainer.style.display = 'block';
     resultElement.style.display = 'none';
+    startScreen.style.display = 'none';
     
-    // Shuffle all questions and take the first 7
     randomizedQuestions = [...quizData];
     shuffleArray(randomizedQuestions);
     randomizedQuestions = randomizedQuestions.slice(0, 7);
     
     showQuestion();
+}
+
+function showQuestion() {
+    const currentQuestion = randomizedQuestions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+    optionsElement.innerHTML = '';
+    explanationElement.textContent = '';
+    explanationElement.classList.remove('loading');
+    explanationElement.classList.add('hidden');
+
+    nextButton.style.display = 'none';
+
+    // Create buttons for all options first
+    const buttons = currentQuestion.options.map(option => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.className = 'option-button';
+        button.onclick = () => selectAnswer(option);
+        return button;
+    });
+
+    // Find the widest button
+    const maxWidth = Math.max(...buttons.map(button => {
+        optionsElement.appendChild(button);
+        const width = button.offsetWidth;
+        optionsElement.removeChild(button);
+        return width;
+    }));
+
+    // Set all buttons to the maximum width and append them
+    buttons.forEach(button => {
+        button.style.width = `${maxWidth}px`;
+        optionsElement.appendChild(button);
+    });
 }
 
 function selectAnswer(selectedOption) {
@@ -146,9 +182,8 @@ function selectAnswer(selectedOption) {
             }
         });
 
-        // Show the next button after the answer is given
         nextButton.style.display = 'block';
-    }, 1000); // Simulating a delay for the explanation
+    }, 1000);
 }
 
 function showNextQuestion() {
@@ -156,31 +191,9 @@ function showNextQuestion() {
 
     if (currentQuestionIndex < randomizedQuestions.length) {
         showQuestion();
-        // Hide the next button until an answer is selected
-        nextButton.style.display = 'none';
     } else {
         showResult();
     }
-}
-
-function showQuestion() {
-    const currentQuestion = randomizedQuestions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    optionsElement.innerHTML = '';
-    explanationElement.textContent = '';
-    explanationElement.classList.remove('loading');
-    explanationElement.classList.add('hidden');
-
-    // Hide the next button when showing a new question
-    nextButton.style.display = 'none';
-
-    currentQuestion.options.forEach(option => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.className = 'option-button';
-        button.onclick = () => selectAnswer(option);
-        optionsElement.appendChild(button);
-    });
 }
 
 function showResult() {
@@ -200,11 +213,17 @@ function showResult() {
     resultElement.style.display = 'block';
 }
 
-
+startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', showNextQuestion);
-restartButton.addEventListener('click', startQuiz);
+restartButton.addEventListener('click', () => {
+    quizContainer.style.display = 'none';
+    resultElement.style.display = 'none';
+    startScreen.style.display = 'block';
+});
 
-startQuiz();
+// Initialize the quiz
+startScreen.style.display = 'block';
+quizContainer.style.display = 'none';
 
 // Croissant animation logic
 const maxCroissants = 4;

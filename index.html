@@ -11,24 +11,31 @@
 <body>
     <div id="croissant-container"></div>
 
-    <div class="title-bar">
-        <h1>The Seven Wonders Pop Quiz</h1>
-    </div>
+<div class="title-bar">
+  <h1>The Seven Wonders Pop Quiz</h1>
+</div>
 
-    <div class="container">
-        <div id="quiz-container">
-            <div id="question"></div>
-            <div id="options"></div>
-            <div id="explanation" class="explanation"></div>
-            <button id="next-btn">Next Question</button>
-        </div>
-        <div id="result"></div>
-        <button id="restart-btn">Start Over Quiz</button>
-    </div>
-    <div class="parthenon">🏛️</div>
-    <footer class="footer">
-        Made with ❤️
-    </footer>
+<div class="container">
+  <div id="start-screen">
+    <button id="start-btn">Start Quiz</button>
+  </div>
+  
+  <div id="quiz-container" style="display: none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="explanation" class="explanation hidden"></div>
+    <button id="next-btn" style="display: none;">Next Question</button>
+  </div>
+
+  <div id="result" style="display: none;"></div>
+  <button id="restart-btn" style="display: none;">Start Over Quiz</button>
+</div>
+
+<div class="parthenon">
+  🏛️
+</div>
+
+<footer>Made with ❤️</footer>
 
     <script src="script.js"></script>
 </body>
