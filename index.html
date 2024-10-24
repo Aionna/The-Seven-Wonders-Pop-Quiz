@@ -1,48 +1,41 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven Wonders Pop Quiz - Image Edition</title>
+    <title>The Seven Wonders Pop Quiz</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="croissant-container"></div>
 
-    <div class="title-bar">
-        <h1>
-            The Seven Wonders Pop Quiz 
-            <img src="image.png" alt="Picture icon">
-            <span>Image Edition</span>
-        </h1>
-    </div>
+<div class="title-bar">
+  <h1>The Seven Wonders Pop Quiz</h1>
+</div>
 
-    <div class="container">
-        <div id="start-screen">
-            <button id="start-btn">Start Quiz</button>
-        </div>
+<div class="container">
+  <div id="start-screen">
+    <button id="start-btn">Start Quiz</button>
+  </div>
+  
+  <div id="quiz-container" style="display: none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="explanation" class="explanation hidden"></div>
+    <button id="next-btn" style="display: none;">Next Question</button>
+  </div>
 
-        <div id="quiz-container" style="display: none;">
-            <div id="question-image"></div>
-            <div class="question-container">
-                <div id="question"></div>
-                <div id="options"></div>
-                <div id="explanation" class="explanation hidden"></div>
-            </div>
-            <button id="next-btn">Next Question</button>
-        </div>
+  <div id="result" style="display: none;"></div>
+  <button id="restart-btn" style="display: none;">Start Over Quiz</button>
+</div>
 
-        <div id="result" style="display: none;"></div>
-        <button id="restart-btn" style="display: none;">Start Over Quiz</button>
-    </div>
+<div class="footer">
+  <div class="parthenon">🏛️</div>
+  <p>Made with <span id="love-link" class="clickable-heart">❤️</span></p>
+</div>
 
-    <footer class="footer">
-        <div class="parthenon">🏛️</div>
-        Made with <span id="love-link" class="clickable-heart">❤️</span>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

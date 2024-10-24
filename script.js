@@ -1,48 +1,93 @@
 const quizData = [
     {
-        question: "Why did the AI give Ioanna a third hand for chomping down the ramen?",
-        image: "japan (3).jpg",
-        options: ["It was 'create one , get one hand for free' day !", "A finger here, a hand there, two hands mashed together... That's what AIs do.", "Have you seen her use chopsticks? Enough said!", "In order to strike that cute pose ,she needed a helping hand!"],
-        correct: "Have you seen her use chopsticks? Enough said!",
-        explanation: "Even three are not enough!",
+        question: "How many talking birds have appeared in The Seven Wonders so far?",
+        options: ["1", "2", "3", "4"],
+        correct: "2",
+        explanation: "Groucho, the sassy owl, and Sasspero, the record-keeping parrot!",
     },
     {
-        question: "Ioanna is a famous onna-musha, and like all legendary figures, her image tends to get a bit... exaggerated. Take this one for example! How so?",
-        image: "japan (5).jpg",
-        options: ["Those extra fingers really help her juggle swords like a pro!", "Her hair: long, dark, and miraculously immune to frizz!", "Her big fluffy...pillows!", "All of the above!"],
-        correct: "All of the above!",
-        explanation: "She fights enemies with a normal set of fingers, frizzy hair and... small cushions which make it even more impressive!",
+        question: "To which goddess is Cédric the Champion?",
+        options: ["Athena", "Artemis", "Aphrodite", "Hera"],
+        correct: "Artemis",
+        explanation: "As it was foretold long ago, Cédric rebuild her temple.",
     },
     {
-        question: "What's depicted in the picture?",
-        image: "japan (10).jpg",
-        options: ["Are you blind?A fine japanese knife perfect for cutting you waygu steak!", "Suns & moons and various other stars. I can't see anything else, can you?", "A katana.The Green-eyed Samurai's katana!", " A tanto! (The tricky answer)"],
-        correct: "A katana.The Green-eyed Samurai's katana!",
-        explanation: "Amaterasu knows how to spot a true warrior's heart! Her gift? A katana and a tanto!The katana just took the spotlight!",
+        question: "What is the name of Circe's cat?",
+        options: ["Godzilla", "Fatzilla", "Gorilla", "Catzilla"],
+        correct: "Catzilla",
+        explanation: "The world's hungriest and cuddliest Trojan cat!",
     },
     {
-        question: "Why is our beloved Green-Eyed Samurai crying?",
-        image: "japan (14).jpg",
-        options: ["His favorite ramen place was all out of ramen!", "Someone kidnapped the small Tanuki! OMFG!", "These are tears of joy because his favorite ramen shop was open and was stocked in ramen!", " His all out of hair shaping cream!"],
-        correct: "Someone kidnapped the small Tanuki! OMFG!",
-        explanation: "Though running out of hair formation cream would be the worst , in this case he shed a tear when the small Tanuki was abducted! Or maybe it was a tear because he had to go fetch her or something got into his eye...",
+        question: "On which Greek island was Cédric transformed into his mini, cute-as-hell version?",
+        options: ["Rhodes", "Kos", "Aeaea", "Ikaria"],
+        correct: "Rhodes",
+        explanation: "He was so cute that everyone couldn't help but sigh!",
     },
     {
-        question: "What is the Green-Eyed Samurai carrying?",
-        image: "japan (1).jpg",
-        options: ["His favorite ramen place was all out of ramen!", "Someone kidnapped the small Tanuki! OMFG!", "These are tears of joy because his favorite ramen shop was open and was stocked in ramen!", " His all out of hair shaping cream!"],
-        correct: "Someone kidnapped the small Tanuki! OMFG!",
-        explanation: "Though running out of hair formation cream would be the worst , in this case he shed a tear when the small Tanuki was abducted! Or maybe it was a tear because he had to go fetch her or just plain sweat that got into his eyes...",
+        question: "The title of one episode in Cédric and Ioanna's Japanese escapades is 'The Samurai &...'",
+        options: ["The Village Idiot", "The Tanuki", "The Discounted Temu Barbie", "The Alley Cat"],
+        correct: "The Tanuki",
+        explanation: "The Japanese humidity had made Ioanna particularly fluffy!",
     },
-    
+    {
+        question: "What makes Triton ugly-cry?",
+        options: ["His daddy issues.", "Korean Fish Dramas", "Ioanna's singing voice!", "Water...There is just too much of it!"],
+        correct: "Ioanna's singing voice!",
+        explanation: "It's so bad, but that's what makes it so good! ",
+    },
+    {
+        question: "Which song does Ioanna sing to summon Poseidon?",
+        options: ["Kung-Fu Figthing by Carl Douglas.", "Daddy Cool by Boney M.", "Pussy Cat by Cy Coleman", "Atlantis Is Calling (S.O.S. for Love) by Modern Talking"],
+        correct: "Atlantis Is Calling (S.O.S. for Love) by Modern Talking",
+        explanation: "🎵Oh, oh, oh, little queenie .I'm your fool, come on...🎵",
+    },
+    {
+        question: "Apart from Cédric, who else has a PhD in the story?",
+        options: [
+            "Zeus! The ruler of Olympus must be an expert...Right?",
+            "Groucho. With a PhD in sass.",
+            "Athena. She plays the knowledgeable, so she must be one.",
+            "Cédric's Hair!"
+        ],
+        correct: "Cédric's Hair!",
+        explanation: "Cédric's hair have done its own dissertation in...style!",
+    },
+    {
+        question: "When his students call, he answers! What is Cédric's signal?",
+        options: ["A bat! He is the nocturnal vigilante!", "A focaccia!", "An obscure electrochemistry sign!", "An owl! The symbol of wisdom!"],
+        correct: "A focaccia!",
+        explanation: "Nom ,nom ,nom...The tasty U.F.O. looking bread he nails everytime!",
+    },
+    {
+        question: "What class does Ioanna play?",
+        options: ["With her voice? A bard, of course!", "A druid-healer, milord! At your service!", "Have you seen her hair? A barbarian!", "A sorceress! Circe even asked her for an autograph..."],
+        correct: "A druid-healer, milord! At your service!",
+        explanation: "She makes boo-boos go away!",
+    },
+    {
+        question: "Which physical feature of Cédric makes females babble?",
+        options: ["His silky hair,because it is like...silk!", "His croissant-abs. They are buttery, making everyone go...nom nom nom!", "His emerald eyes!", "His PowerPoint Presentantions! Have you seen those things? 🥵"],
+        correct: "His emerald eyes!",
+        explanation: "They short-circuit you and make you go...ga ga gou gou!",
+    },
+    {
+        question: "What is Ioanna's favorite war cry?",
+        options: ["Glou Glou Glou! Like an angry turkey!", "Yodel-ay-ee-oo!Yodel-ay-hee-hoo! Drawing power from the yodlers of the Alps!", "Ya! Ya! Ya!", "Oh là là! The stylish war cry!"],
+        correct: "Ya! Ya! Ya!",
+        explanation: "The war cry of a true prozor...attackor!",
+    },
 ];
 
 let currentQuestionIndex = 0;
 let score = 0;
 let randomizedQuestions = [];
-const questionsPerQuiz = 4; 
 
-const questionImageElement = document.getElementById("question-image");
+const descriptions = {
+    low: "Oh mon dieu! 😱",
+    medium: "Eh ben, this isn't shabby at all!😎",
+    high: "Oh là là! You're a true Seven Wonders connoisseur! 🏆"
+};
+
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const explanationElement = document.getElementById("explanation");
@@ -72,14 +117,13 @@ function startQuiz() {
     
     randomizedQuestions = [...quizData];
     shuffleArray(randomizedQuestions);
-    randomizedQuestions = randomizedQuestions.slice(0, questionsPerQuiz);
+    randomizedQuestions = randomizedQuestions.slice(0, 7);
     
     showQuestion();
 }
 
 function showQuestion() {
     const currentQuestion = randomizedQuestions[currentQuestionIndex];
-    questionImageElement.innerHTML = `<img src="${currentQuestion.image}" alt="Quiz question image">`;
     questionElement.textContent = currentQuestion.question;
     optionsElement.innerHTML = '';
     explanationElement.textContent = '';
@@ -88,11 +132,26 @@ function showQuestion() {
 
     nextButton.style.display = 'none';
 
-    currentQuestion.options.forEach(option => {
+    // Create buttons for all options first
+    const buttons = currentQuestion.options.map(option => {
         const button = document.createElement('button');
         button.textContent = option;
         button.className = 'option-button';
         button.onclick = () => selectAnswer(option);
+        return button;
+    });
+
+    // Find the widest button
+    const maxWidth = Math.max(...buttons.map(button => {
+        optionsElement.appendChild(button);
+        const width = button.offsetWidth;
+        optionsElement.removeChild(button);
+        return width;
+    }));
+
+    // Set all buttons to the maximum width and append them
+    buttons.forEach(button => {
+        button.style.width = `${maxWidth}px`;
         optionsElement.appendChild(button);
     });
 }
@@ -109,7 +168,7 @@ function selectAnswer(selectedOption) {
             score++;
             explanationElement.textContent = `Correct! ${currentQuestion.explanation}`;
         } else {
-            explanationElement.textContent = `Incorrect. The correct answer is: ${currentQuestion.correct}. ${currentQuestion.explanation}`;
+            explanationElement.textContent = `Incorrect. The correct answer is ${currentQuestion.correct}. ${currentQuestion.explanation}`;
         }
         explanationElement.classList.remove('loading');
 
@@ -139,30 +198,40 @@ function showNextQuestion() {
 
 function showResult() {
     let scoreDescription;
-    if (score <= 1) {
-        scoreDescription = "Oh mon dieu! 😱 You might want to brush up on your Seven Wonders knowledge!";
-    } else if (score <= 2) {
-        scoreDescription = "Eh ben, this isn't shabby at all! 😎 You're on your way to becoming a Seven Wonders expert!";
-    } else if (score === 3) {
-        scoreDescription = "Très bien! You're almost a Seven Wonders connoisseur! 🏆";
+    if (score <= 3) {
+        scoreDescription = descriptions.low;
+    } else if (score <= 6) {
+        scoreDescription = descriptions.medium;
     } else {
-        scoreDescription = "Oh là là! You're a true Seven Wonders connoisseur! 🏆 Magnifique!";
+        scoreDescription = descriptions.high;
     }
 
-    resultElement.innerHTML = `You scored ${score} out of ${randomizedQuestions.length}.<br><br>${scoreDescription}`;
+    resultElement.innerHTML = `You scored ${score} out of 7.<br><br>${scoreDescription}`;
     restartButton.style.display = 'block';
     nextButton.style.display = 'none';
     quizContainer.style.display = 'none';
     resultElement.style.display = 'block';
 }
 
+startButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', showNextQuestion);
+restartButton.addEventListener('click', () => {
+    quizContainer.style.display = 'none';
+    resultElement.style.display = 'none';
+    startScreen.style.display = 'block';
+});
+
 function restartQuiz() {
     quizContainer.style.display = 'none';
     resultElement.style.display = 'none';
     startScreen.style.display = 'block';
-    restartButton.style.display = 'none';
-    startButton.style.display = 'block';
+    restartButton.style.display = 'none'; // Hide restart button
+    startButton.style.display = 'block'; // Show start button
 }
+
+startButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', showNextQuestion);
+restartButton.addEventListener('click', restartQuiz);
 
 // Initialize the quiz
 function initQuiz() {
@@ -173,21 +242,16 @@ function initQuiz() {
     startButton.style.display = 'block';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    startButton.addEventListener('click', startQuiz);
-    nextButton.addEventListener('click', showNextQuestion);
-    restartButton.addEventListener('click', restartQuiz);
-    initQuiz();
-});
+// Call initQuiz when the page loads
+window.addEventListener('load', initQuiz);
 
 // Croissant animation logic
-const maxCroissant = 4;
-let activeCroissant = 0;
+const maxCroissants = 4;
+let activeCroissants = 0;
 
 function createCroissant() {
-    if (activeCroissant >= maxCroissant) return;
-
-    activeCroissant++;
+    if (activeCroissants >= maxCroissants) return;
+    
     const croissantContainer = document.getElementById('croissant-container');
     const croissant = document.createElement('span');
     croissant.classList.add('croissant');
@@ -198,26 +262,31 @@ function createCroissant() {
     croissant.style.animationDuration = `${duration}s`;
     
     croissantContainer.appendChild(croissant);
+    activeCroissants++;
 
-    croissant.addEventListener('animationend', () => {
+    croissant.addEventListener('animationiteration', () => {
         croissant.remove();
-        activeCroissant--;
+        activeCroissants--;
         createCroissant();
     });
 }
 
-// Start croissant animation when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+for (let i = 0; i < maxCroissants; i++) {
+    createCroissant();
+}
+
+setInterval(() => {
+    while (activeCroissants < maxCroissants) {
+        createCroissant();
+    }
+}, 1000);
+
+document.addEventListener('DOMContentLoaded', function() {
     const loveLink = document.getElementById('love-link');
-    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX';
+    const protonDriveLink = 'https://drive.proton.me/urls/DNFQ1CGQY4#otyr4Cf4LZzX'; // Replace with your actual Google Drive link
 
     loveLink.addEventListener('click', function(e) {
         e.preventDefault();
         window.open(protonDriveLink, '_blank');
     });
-
-    // Initialize croissants
-    for (let i = 0; i < maxCroissant; i++) {
-        createCroissant();
-    }
 });
